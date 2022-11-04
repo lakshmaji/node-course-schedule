@@ -1,0 +1,23 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/src/**/*.{js,js.map,test.js}": true,
+        "node_modules": true,
+        "geektrust.js.map": true,
+        "geektrust.js": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/src/**/*.{js,js.map,test.js}": true,
+        "**/*.code-search": true,
+        "geektrust.js": true,
+        "geektrust.js.map": true,
+        "coverage": true
+    }
+}
