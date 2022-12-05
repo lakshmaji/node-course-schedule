@@ -1,8 +1,8 @@
-import withMechanics, { MyFn } from "../with_mechanics";
+import withStore, { CachableArgs } from "../with_store";
 
 const cancelCourse =
-  ({ employees_svc }: MyFn) =>
-  (course_registration_id: string) => {
+  ({ employees_svc }: CachableArgs) =>
+  (course_registration_id: string): string => {
     const employees =employees_svc.employees.map(employee=> {
       if (employee.registration_id == course_registration_id) {
         employee.status = false;
@@ -14,4 +14,4 @@ const cancelCourse =
   };
 
 
-export default withMechanics(cancelCourse);
+export default withStore<string>(cancelCourse);
