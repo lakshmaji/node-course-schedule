@@ -1,4 +1,7 @@
-# Nodejs.js code quality evaluation
+# Course registration
+
+![geektrust](./.github/crs.jpeg)
+
 
 ```bash
 yarn install
